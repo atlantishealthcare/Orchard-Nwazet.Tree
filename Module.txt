@@ -1,0 +1,21 @@
+﻿Name: The Tree
+AntiForgery: disabled
+Author: Bertrand Le Roy / [nwazet
+Website: http://nwazet.com
+Version: 1.6
+OrchardVersion: 1.6
+Description: Treeview navigation in the admin
+Features:
+    Nwazet.Tree:
+        Name: The Tree
+        Description: Treeview navigation in the admin
+        Category: Navigation
+    Nwazet.Tree.ContentBranches:
+        Name: Content Branches for The Tree
+        Description: A provider for The Tree that adds a branch per content type, with content items under those, taking container hierarchy into account.
+        Category: Navigation
+    Nwazet.Tree.TaxonomyBranches:
+        Name: Taxonomy Branches for The Tree
+        Description: A provider for The Tree that adds taxonomy-based branches.
+        Category: Navigation
+        Dependencies: Orchard.Taxonomies

@@ -1,0 +1,31 @@
+﻿@using Orchard.Utility.Extensions
+@model Nwazet.Tree.ViewModels.TreeExplorerViewModel
+           
+@{
+    Script.Require("jQuery");
+    Script.Include("the-tree.js");
+    var title = Model.Node.Id == "/" ? T("The Tree").Text : Model.Node.Title;
+    Layout.Title = title;
+}
+
+<div class="the-tree-explorer">
+    <ul class="the-tree-explorer-panes">
+        <li class="the-tree-explorer-pane">
+            <ul class="the-tree-explorer-list">
+                @foreach (var node in Model.Children) {
+                    <li>
+                        <a href="@node.Url" class="the-tree-explorer-node">@node.Title</a>
+                        @if (!node.IsLeaf) {
+                            <a href="@Url.Action("Index", "Tree", new {
+                                         area = "Nwazet.Tree", 
+                                         id = node.Id, 
+                                         type = node.Type
+                                     })"
+                               class="the-tree-explorer-expand-node">&gt;</a>
+                        }
+                    </li>
+                }
+            </ul>
+        </li>
+    </ul>
+</div>
