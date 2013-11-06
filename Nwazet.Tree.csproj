@@ -87,7 +87,7 @@
       <Project>{9916839C-39FC-4CEB-A5AF-89CA7E87119F}</Project>
       <Name>Orchard.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Orchard.Taxonomies\Orchard.Taxonomies.csproj">
+    <ProjectReference Include="..\Contrib.Taxonomies\Contrib.Taxonomies.csproj">
       <Project>{e649ea64-d213-461b-87f7-d67035801443}</Project>
       <Name>Orchard.Taxonomies</Name>
     </ProjectReference>
