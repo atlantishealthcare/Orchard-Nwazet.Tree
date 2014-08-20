@@ -242,3 +242,46 @@
     font-weight: bold;
     font-size: 1.4em;
 }
+
+/* RTL */
+.dir-rtl .the-tree-container {
+    left: inherit;
+    right: 0;
+}
+.dir-rtl .the-tree-open-tag {
+    right: inherit;
+    left: -26px;
+}
+
+.dir-rtl .the-tree-open-tag div a {
+    border-top-right-radius: inherit;
+    -moz-border-top-right-radius: inherit;
+    -webkit-border-top-right-radius: inherit;
+    -ms-border-top-right-radius: inherit;
+    -o-border-top-right-radius: inherit;
+    border-top-left-radius: 10px;
+    -moz-border-top-left-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -ms-border-top-left-radius: 10px;
+    -o-border-top-left-radius: 10px;
+    padding: 3px 20px 3px 3px;
+}
+.dir-rtl .the-tree-open-tag.open div a {
+    right: inherit;
+    left: -53px;
+}
+.dir-rtl .the-tree-expando-glyph a {
+    padding-left: inherit;
+    padding-right: 16px;
+}
+.dir-rtl .the-tree-branch {
+    padding-left: inherit;
+    padding-right: 16px;
+}
+.dir-rtl .the-tree-waits {
+    margin-left: inherit;
+    margin-right: 7px;
+}
+.dir-rtl .the-tree-explorer-list li {
+    padding: 2px 8px 2px 22px;
+}
